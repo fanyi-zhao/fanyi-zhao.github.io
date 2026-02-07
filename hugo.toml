@@ -44,6 +44,11 @@ Title = "Welcome to Fanyi’s Dev Log"
 Content = "Hi, this is Fanyi. I'm documenting my learning notes in this blog."
 
 [[params.socialIcons]]
+name = "twitter"
+url = "https://x.com/fanyi_devlog"
+title = "Twitter"
+
+[[params.socialIcons]]
 name = "github"
 url = "https://github.com/fanyi-zhao"
 title = "Github"
