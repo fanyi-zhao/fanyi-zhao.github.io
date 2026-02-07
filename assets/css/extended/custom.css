@@ -1,0 +1,15 @@
+:root {
+  --main-width: 760px;
+}
+
+.first-entry.home-info {
+  min-height: 0;
+}
+
+.post-content .qa {
+  margin: 0 0 1.25rem;
+}
+
+.post-content .qa p {
+  margin-top: 0.4rem;
+}

@@ -1,0 +1,87 @@
+baseURL = "https://fanyi-zhao.github.io/"
+languageCode = "en-us"
+title = "Fanyi’s Dev Log"
+theme = "PaperMod"
+enableRobotsTXT = true
+
+[pagination]
+pagerSize = 20
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[permalinks]
+posts = "/posts/:year-:month-:day-:slug/"
+
+[params]
+env = "production"
+title = "Fanyi’s Dev Log"
+description = "Document my learning notes."
+author = "Fanyi Zhao"
+defaultTheme = "auto"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowCodeCopyButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowShareButtons = false
+disableSpecial1stPost = true
+mainSections = ["posts"]
+math = true
+
+[params.assets]
+favicon = "favicon_wine.ico"
+favicon16x16 = "favicon-16x16.png"
+favicon32x32 = "favicon-32x32.png"
+apple_touch_icon = "apple-touch-icon.png"
+
+[params.homeInfoParams]
+Title = "Welcome to Fanyi’s Dev Log"
+Content = "Hi, this is Fanyi. I'm documenting my learning notes in this blog."
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/fanyi-zhao"
+title = "Github"
+
+[params.fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 1000
+threshold = 0.4
+minMatchCharLength = 2
+keys = ["title", "permalink", "summary", "content"]
+
+[[menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "/"
+weight = 10
+
+[[menu.main]]
+identifier = "archive"
+name = "Archive"
+url = "/archives/"
+weight = 20
+
+[[menu.main]]
+identifier = "search"
+name = "Search"
+url = "/search/"
+weight = 30
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 40
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
